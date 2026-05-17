@@ -1,0 +1,9 @@
+/*
+  Theme 2 - Purple
+  font-playfair for h1, font-poppins for all
+*/
+:root {
+  --color-primary: #7c3aed;
+  --color-secondary: #1e1b4b;
+  --font-color: #1e1b4b;
+}

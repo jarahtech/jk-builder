@@ -1,0 +1,79 @@
+/* ========================================
+   Page CSS - 1
+   Elementor-style: post-1.css
+   Generated: 2026-04-11
+   ======================================== */
+
+/* Widget: topbar-section - widget_35c0f3a1 */
+.widget-topbar-section-35c0f3a1 {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0px 8px 0px;
+  background-color: #c70000;
+  color: #ffffff;
+}
+
+/* Widget: header-section - widget_71275104 */
+.widget-header-section-71275104 {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Widget: hero-section - widget_12345678 */
+.widget-hero-section-12345678 {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  padding: 100px 0px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.widget-hero-section-12345678 h1 {
+  font-size: 56px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.widget-hero-section-12345678 p {
+  font-size: 24px;
+  color: #e2e8f0;
+  margin-bottom: 16px;
+}
+
+.widget-hero-section-12345678 p:last-child {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.widget-hero-section-12345678 a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.widget-hero-section-12345678 a:first-child {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.widget-hero-section-12345678 a:nth-child(2) {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}

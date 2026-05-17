@@ -1,0 +1,11 @@
+/*
+	font-playfair for h1
+	font - poppins for all
+	*/
+
+
+:root {
+  --color-primary: #fa360a;
+  --color-secondary: #000000;
+  --font-color: #000000;
+}

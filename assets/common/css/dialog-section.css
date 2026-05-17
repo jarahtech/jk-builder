@@ -1,0 +1,313 @@
+/* ========================================
+   Dialog Section Widget
+   Modal dialogs and popups using HTML5 dialog element
+   Global CSS - No inline styles
+   ======================================== */
+
+/* HTML5 Dialog Element */
+dialog {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+/* Dialog::backdrop for overlay */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+/* Dialog Contents Wrapper */
+.dialog-contents {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: dialogSlideIn 0.3s ease forwards;
+}
+
+/* Dialog Width Variants */
+.dialog-contents[data-width="small"] {
+  width: 400px;
+  max-width: 90vw;
+}
+
+.dialog-contents[data-width="medium"] {
+  width: 600px;
+  max-width: 90vw;
+}
+
+.dialog-contents[data-width="large"] {
+  width: 800px;
+  max-width: 90vw;
+}
+
+.dialog-contents[data-width="full"] {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  border-radius: 0;
+}
+
+/* Dialog Position Variants */
+.dialog-contents[data-position="top"] {
+  margin-top: 100px;
+}
+
+.dialog-contents[data-position="bottom"] {
+  margin-top: auto;
+  margin-bottom: 100px;
+}
+
+/* Dialog Header */
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+}
+
+.dialog-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dialog-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dialog-close:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* Dialog Body */
+.dialog-body {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.dialog-body p {
+  margin: 0;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Dialog Footer */
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 0 0 8px 8px;
+}
+
+.dialog-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-btn-cancel {
+  background: #ffffff;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+.dialog-btn-cancel:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.dialog-btn-confirm {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.dialog-btn-confirm:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Animation */
+@keyframes dialogSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Scrollbar Styles */
+.dialog-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dialog-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dialog-body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.dialog-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  dialog {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .dialog-contents {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .dialog-contents[data-width="small"],
+  .dialog-contents[data-width="medium"],
+  .dialog-contents[data-width="large"] {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .dialog-contents[data-position="center"],
+  .dialog-contents[data-position="top"],
+  .dialog-contents[data-position="bottom"] {
+    margin: 0;
+  }
+
+  .dialog-header {
+    padding: 16px 20px;
+  }
+
+  .dialog-header h3 {
+    font-size: 16px;
+  }
+
+  .dialog-body {
+    padding: 20px;
+  }
+
+  .dialog-body p {
+    font-size: 14px;
+  }
+
+  .dialog-footer {
+    padding: 12px 20px;
+  }
+
+  .dialog-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dialog-header {
+    padding: 12px 16px;
+  }
+
+  .dialog-header h3 {
+    font-size: 16px;
+  }
+
+  .dialog-body {
+    padding: 16px;
+  }
+
+  .dialog-footer {
+    padding: 12px 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .dialog-btn {
+    width: 100%;
+    padding: 10px 16px;
+  }
+}
+
+/* Focus styles for accessibility */
+dialog:focus {
+  outline: none;
+}
+
+.dialog-btn:focus,
+.dialog-close:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  dialog {
+    display: none;
+  }
+}

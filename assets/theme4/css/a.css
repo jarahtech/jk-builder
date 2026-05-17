@@ -1,0 +1,9 @@
+/*
+  Theme 4 - Amber
+  font-playfair for h1, font-poppins for all
+*/
+:root {
+  --color-primary: #d97706;
+  --color-secondary: #78350f;
+  --font-color: #78350f;
+}

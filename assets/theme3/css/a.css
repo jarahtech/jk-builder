@@ -1,0 +1,9 @@
+/*
+  Theme 3 - Emerald
+  font-playfair for h1, font-poppins for all
+*/
+:root {
+  --color-primary: #059669;
+  --color-secondary: #064e3b;
+  --font-color: #064e3b;
+}

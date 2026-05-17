@@ -1,0 +1,65 @@
+/* ========================================
+   Mobile Menu Section Widget
+   Global CSS - No inline styles
+   ======================================== */
+
+/* Mobile Menu Content */
+.mobile-menu-content {
+  position: relative;
+  z-index: 9999;
+  background: #fff;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Navigation */
+.mobile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav li {
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-nav a {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Dropdown */
+.mobile-nav .dropdown {
+  display: none;
+  padding-left: 15px;
+}
+
+.mobile-nav li.open > .dropdown {
+  display: block;
+}
+
+/* Arrow */
+.arrow {
+  font-weight: bold;
+}
+
+/* Scrollbar Styles */
+.mobile-menu-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mobile-menu-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mobile-menu-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.mobile-menu-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}

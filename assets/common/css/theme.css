@@ -1,0 +1,162 @@
+/* Theme CSS - shared across all themes */
+
+/* === @import MUST come first (CSS spec requirement) === */
+@import url('aa.css');
+@import url('aos-text-animation.css');
+@import url('aos.css');
+@import url('about.css');
+@import url('brands-section.css');
+@import url('buttons.css');
+@import url('cart.css');
+@import url('checkout.css');
+@import url('clients.css');
+@import url('contact.css');
+@import url('dialog-section.css');
+@import url('experience.css');
+@import url('faq.css');
+@import url('footer.css');
+@import url('gallery-section.css');
+@import url('gallery.css');
+@import url('glightbox.min.css');
+@import url('header.css');
+@import url('image-hover-animation.css');
+@import url('image-screen.css');
+@import url('j-arrow-font.css');
+@import url('jsocial.css');
+@import url('loop-hover-img-animation.css');
+@import url('menu.css');
+@import url('mobile-menu.css');
+@import url('newsletter.css');
+@import url('onlyanimation.css');
+@import url('price-table.css');
+@import url('products.css');
+@import url('recent-work.css');
+@import url('select2.min.css');
+@import url('services.css');
+@import url('single-blog.css');
+@import url('single-img-animation.css');
+@import url('single-product.css');
+@import url('slick.css');
+@import url('slide.css');
+@import url('slider-navigation.css');
+@import url('slider-pagination.css');
+@import url('slider-social.css');
+@import url('slider.css');
+@import url('subtitle.css');
+@import url('swiper.min.css');
+@import url('tab-gallery.css');
+@import url('teams.css');
+@import url('testimonial.css');
+@import url('timeline.css');
+@import url('title.css');
+@import url('topbar.css');
+@import url('unique-animations-nav.css');
+@import url('unique-animations-social.css');
+
+/* === Bootstrap Grid Shim (after @imports) === */
+/* Widget renderers use Bootstrap-style class names (col-lg-*, d-flex, etc.)
+   This shim provides them without the full Bootstrap reset/preflight. */
+.container { width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+.row { display: flex; flex-wrap: wrap; margin-left: -10px; margin-right: -10px; }
+.row > [class*="col-"] { padding-left: 10px; padding-right: 10px; }
+.col-lg-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
+.col-lg-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
+.col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+.col-lg-4 { flex: 0 0 33.3333%; max-width: 33.3333%; }
+.col-lg-5 { flex: 0 0 41.6667%; max-width: 41.6667%; }
+.col-lg-6 { flex: 0 0 50%; max-width: 50%; }
+.col-lg-7 { flex: 0 0 58.3333%; max-width: 58.3333%; }
+.col-lg-8 { flex: 0 0 66.6667%; max-width: 66.6667%; }
+.col-lg-9 { flex: 0 0 75%; max-width: 75%; }
+.col-lg-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+.col-lg-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+.col-lg-12 { flex: 0 0 100%; max-width: 100%; }
+.col-md-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
+.col-md-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
+.col-md-3 { flex: 0 0 25%; max-width: 25%; }
+.col-md-4 { flex: 0 0 33.3333%; max-width: 33.3333%; }
+.col-md-5 { flex: 0 0 41.6667%; max-width: 41.6667%; }
+.col-md-6 { flex: 0 0 50%; max-width: 50%; }
+.col-md-7 { flex: 0 0 58.3333%; max-width: 58.3333%; }
+.col-md-8 { flex: 0 0 66.6667%; max-width: 66.6667%; }
+.col-md-9 { flex: 0 0 75%; max-width: 75%; }
+.col-md-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+.col-md-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+.col-md-12 { flex: 0 0 100%; max-width: 100%; }
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+.col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 { flex: 0 0 100%; max-width: 100%; }
+@media (min-width: 576px) {
+  .col-sm-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
+  .col-sm-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
+  .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-sm-4 { flex: 0 0 33.3333%; max-width: 33.3333%; }
+  .col-sm-5 { flex: 0 0 41.6667%; max-width: 41.6667%; }
+  .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-sm-7 { flex: 0 0 58.3333%; max-width: 58.3333%; }
+  .col-sm-8 { flex: 0 0 66.6667%; max-width: 66.6667%; }
+  .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-sm-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+  .col-sm-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+  .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+}
+@media (min-width: 768px) {
+  .col-md-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
+  .col-md-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
+  .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-md-4 { flex: 0 0 33.3333%; max-width: 33.3333%; }
+  .col-md-5 { flex: 0 0 41.6667%; max-width: 41.6667%; }
+  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-md-7 { flex: 0 0 58.3333%; max-width: 58.3333%; }
+  .col-md-8 { flex: 0 0 66.6667%; max-width: 66.6667%; }
+  .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-md-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+  .col-md-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+  .col-md-12 { flex: 0 0 100%; max-width: 100%; }
+}
+@media (min-width: 992px) {
+  .col-lg-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
+  .col-lg-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
+  .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-lg-4 { flex: 0 0 33.3333%; max-width: 33.3333%; }
+  .col-lg-5 { flex: 0 0 41.6667%; max-width: 41.6667%; }
+  .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-lg-7 { flex: 0 0 58.3333%; max-width: 58.3333%; }
+  .col-lg-8 { flex: 0 0 66.6667%; max-width: 66.6667%; }
+  .col-lg-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-lg-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+  .col-lg-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+  .col-lg-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* === Bootstrap Flex Utilities Shim === */
+.d-flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-md-nowrap { flex-wrap: wrap; }
+@media (min-width: 768px) { .flex-md-nowrap { flex-wrap: nowrap; } }
+.align-items-center { align-items: center; }
+.align-items-start { align-items: flex-start; }
+.align-items-end { align-items: flex-end; }
+.justify-content-center { justify-content: center; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-start { justify-content: flex-start; }
+.justify-content-end { justify-content: flex-end; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inline-block { display: inline-block; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.m-auto { margin: auto; }
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.overflow-hidden { overflow: hidden; }
